@@ -222,7 +222,7 @@ export default function LineSetting({
             ))}
         </Select>
       </FormControl>
-      <InputSlider
+      {/* <InputSlider
         label='スタイルの強さ上限設定'
         value={styleWeightUB}
         setValue={(value) => setStyleWeightUB(value)}
@@ -285,7 +285,7 @@ export default function LineSetting({
         step={0.05}
         min={0.7}
         max={1.3}
-      />
+      /> */}
       <InputSlider
         label='次のテキストとの間の無音'
         value={lines[currentIndex].silenceAfter}
