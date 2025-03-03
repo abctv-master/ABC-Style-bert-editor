@@ -292,7 +292,7 @@ export default function LineSetting({
         setValue={(value) => setLineState({ silenceAfter: value })}
         step={0.05}
         min={0}
-        max={5}
+        max={10}
       />
     </Paper>
   );
