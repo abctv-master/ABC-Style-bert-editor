@@ -206,7 +206,7 @@ export default function LineSetting({
               </MenuItem>
             ))}
         </Select>
-      </FormControl>
+      {/* </FormControl>
       <FormControl fullWidth variant='standard' sx={{ mb: 2, minWidth: 120 }}>
         <InputLabel>スタイル</InputLabel>
         <Select
@@ -222,7 +222,7 @@ export default function LineSetting({
             ))}
         </Select>
       </FormControl>
-      {/* <InputSlider
+      <InputSlider
         label='スタイルの強さ上限設定'
         value={styleWeightUB}
         setValue={(value) => setStyleWeightUB(value)}
@@ -292,7 +292,7 @@ export default function LineSetting({
         setValue={(value) => setLineState({ silenceAfter: value })}
         step={0.05}
         min={0}
-        max={5}
+        max={10}
       />
     </Paper>
   );
