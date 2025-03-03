@@ -206,7 +206,7 @@ export default function LineSetting({
               </MenuItem>
             ))}
         </Select>
-      {/* </FormControl>
+      </FormControl>
       <FormControl fullWidth variant='standard' sx={{ mb: 2, minWidth: 120 }}>
         <InputLabel>スタイル</InputLabel>
         <Select
@@ -285,14 +285,14 @@ export default function LineSetting({
         step={0.05}
         min={0.7}
         max={1.3}
-      /> */}
+      />
       <InputSlider
         label='次のテキストとの間の無音'
         value={lines[currentIndex].silenceAfter}
         setValue={(value) => setLineState({ silenceAfter: value })}
         step={0.05}
         min={0}
-        max={10}
+        max={5}
       />
     </Paper>
   );
