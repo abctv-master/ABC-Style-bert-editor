@@ -175,7 +175,7 @@ export default function LineSetting({
           ))}
         </Select>
       </FormControl>
-      <FormControl fullWidth variant='standard' sx={{ mb: 1, minWidth: 120 }}>
+      {/* <FormControl fullWidth variant='standard' sx={{ mb: 1, minWidth: 120 }}>
         <InputLabel>モデルファイル</InputLabel>
         <Select
           value={lines[currentIndex].modelFile}
@@ -191,8 +191,8 @@ export default function LineSetting({
               </MenuItem>
             ))}
         </Select>
-      </FormControl>
-      <FormControl fullWidth variant='standard' sx={{ mb: 1, minWidth: 120 }}>
+      </FormControl> */}
+      {/* <FormControl fullWidth variant='standard' sx={{ mb: 1, minWidth: 120 }}>
         <InputLabel>話者</InputLabel>
         <Select
           value={lines[currentIndex].speaker}
@@ -206,8 +206,8 @@ export default function LineSetting({
               </MenuItem>
             ))}
         </Select>
-      </FormControl>
-      <FormControl fullWidth variant='standard' sx={{ mb: 2, minWidth: 120 }}>
+      </FormControl> */}
+      {/* <FormControl fullWidth variant='standard' sx={{ mb: 2, minWidth: 120 }}>
         <InputLabel>スタイル</InputLabel>
         <Select
           value={lines[currentIndex].style}
@@ -221,23 +221,23 @@ export default function LineSetting({
               </MenuItem>
             ))}
         </Select>
-      </FormControl>
-      <InputSlider
+      </FormControl> */}
+      {/* <InputSlider
         label='スタイルの強さ上限設定'
         value={styleWeightUB}
         setValue={(value) => setStyleWeightUB(value)}
         step={0.1}
         min={1}
         max={20}
-      />
-      <InputSlider
+      /> */}
+      {/* <InputSlider
         label='スタイルの強さ（崩壊したら下げて）'
         value={lines[currentIndex].styleWeight}
         setValue={(value) => setLineState({ styleWeight: value })}
         step={0.1}
         min={0}
         max={styleWeightUB}
-      />
+      /> */}
       <InputSlider
         label='話速'
         value={lines[currentIndex].speed}
@@ -246,53 +246,53 @@ export default function LineSetting({
         min={0.5}
         max={2}
       />
-      <InputSlider
+      {/* <InputSlider
         label='テンポの緩急'
         value={lines[currentIndex].sdpRatio}
         setValue={(value) => setLineState({ sdpRatio: value })}
         step={0.05}
         min={0}
         max={1}
-      />
-      <InputSlider
+      /> */}
+      {/* <InputSlider
         label='Noise'
         value={lines[currentIndex].noise}
         setValue={(value) => setLineState({ noise: value })}
         step={0.05}
         min={0}
         max={1}
-      />
-      <InputSlider
+      /> */}
+      {/* <InputSlider
         label='NoiseW'
         value={lines[currentIndex].noisew}
         setValue={(value) => setLineState({ noisew: value })}
         step={0.05}
         min={0}
         max={1}
-      />
-      <InputSlider
+      /> */}
+      {/* <InputSlider
         label='音高(1以外では音質劣化)'
         value={lines[currentIndex].pitchScale}
         setValue={(value) => setLineState({ pitchScale: value })}
         step={0.05}
         min={0.7}
         max={1.3}
-      />
-      <InputSlider
+      /> */}
+      {/* <InputSlider
         label='抑揚(1以外では音質劣化)'
         value={lines[currentIndex].intonationScale}
         setValue={(value) => setLineState({ intonationScale: value })}
         step={0.05}
         min={0.7}
         max={1.3}
-      />
+      /> */}
       <InputSlider
         label='次のテキストとの間の無音'
         value={lines[currentIndex].silenceAfter}
         setValue={(value) => setLineState({ silenceAfter: value })}
         step={0.05}
         min={0}
-        max={10}
+        max={5}
       />
     </Paper>
   );
